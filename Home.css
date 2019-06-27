@@ -1,0 +1,111 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-image:linear-gradient(to bottom right, #eee, #333);
+}
+a{
+	color:grey;
+}
+
+p{
+	min-width:100px;
+    max-width:800px;
+    text-align:center;
+    margin:0 auto;
+}
+
+#home{
+	margin:0px;
+	font-size:300%;
+	color:white;
+	background-image:url("images/background.png");
+	text-align:center;
+}
+#navi{
+	margin:0px;
+}
+table{
+	height:15px;
+	width:100%;
+	background-color:black;
+	font-size:130%;
+	}
+th{
+	color:white;
+	font-family: Times New Roman, Times, serif;
+}
+th:nth-of-type {background-color:blue}
+th:hover {background-color:red}
+fieldset{
+	display:block;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left:0.75em;
+	padding-right: 0.75em;
+	border: 2px solid yellow;
+}
+legend
+{
+	font-size: 22px;
+	font-family: Verdena, sans-serif
+}
+label{
+	font-size: 20px;
+	font-family: monospace;
+}
+.rating
+{
+	transform: translate(-70%,-100%) rotateY(180deg);
+	display: flex;
+}
+.rating input
+{
+	display: none;
+}
+.rating label
+{
+	display: block;
+	cursor: pointer;
+	width: 30px;
+}
+.rating label:before
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 30px;
+	color: white;
+}
+.rating label:after
+{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 30px;
+	color: orange;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px  rgba(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+	opacity: 1;
+}
+.checked {
+  color: orange;
+}
+.G{
+	font-size: 45px;
+}
+.cb label
+{
+	font-family: Arial;
+	font-size: 13;
+}
